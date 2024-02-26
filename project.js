@@ -1,5 +1,5 @@
 let targetDate = new Date();
-targetDate.setDate(targetDate.getDate() + 10); // Set the target date 10 days from now
+targetDate.setDate(targetDate.getDate() + 10); 
 
 function updateCountdown() {
   const countdown = setInterval(() => {
@@ -8,8 +8,8 @@ function updateCountdown() {
 
     if (distance < 0) {
       clearInterval(countdown);
-      targetDate.setDate(targetDate.getDate() + 10); // Reset the target date 10 days from now
-      updateCountdown(); // Start the countdown again
+      targetDate.setDate(targetDate.getDate() + 10); 
+      updateCountdown(); 
     } else {
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -28,4 +28,4 @@ function formatTime(time) {
   return time < 10 ? `0${time}` : time; 
 }
 
-updateCountdown(); // Start the initial countdown
+updateCountdown(); 
