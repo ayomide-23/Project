@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: papayawhip;
+}
+.image{
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    
+    
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+.text{
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    
+}
+
+.image, .text{
+    width: 50%;
+    max-width: 500px;
+    margin: 10px;
+}
+
+.gift-info{
+    color: black;
+    text-transform: uppercase;
+    font-size: xx-large;
+    margin-left: 30px;
+}
+
+.giveaway{
+    margin-left: 30px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    letter-spacing: 7px;
+}
+
+p{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: larger;
+}
+
+.countdown {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
+  .time-unit {
+    width: 5rem;
+    height: 5rem;
+    background-color: lightcoral; /* Dark blue background color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 15px; /* Spacing inside the boxes */
+    margin: 10px; /* Space between the boxes */
+    color: white; /* White text color */
+    display: grid;
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  .number {
+    font-size: 2em; /* Larger font size for the numbers */
+    font-weight: bold; /* Making numbers bold */
+    display: block; /* Making the number take its own line */
+  }
+  
+  .label {
+    font-size: 0.75em; /* Smaller font size for the text labels */
+    letter-spacing: 3px; /* Spacing between letters */
+    text-transform: uppercase; /* Uppercase text for the labels */
+  }
+  
+  /* Optional: If a lighter box is needed for the seconds, add an additional class */
+  .time-unit.lighter {
+    background-color: #3d5066; /* Lighter background color for the 'SECS' */
+    position: relative; /* To position the overlay */
+  }
+  
+  .time-unit.lighter:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2); /* Slightly white transparent overlay */
+    border-radius: inherit; /* Inherit border-radius of the parent */
+  }
+  
